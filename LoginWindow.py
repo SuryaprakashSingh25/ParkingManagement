@@ -6,16 +6,16 @@ class LoginScreen(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Admin Login")
-        self.resize(250,250)
+        self.resize(250, 250)
 
-        layout=QVBoxLayout()
+        layout = QVBoxLayout()
 
-        label_username=QLabel("Username:")
-        input_username=QLineEdit()
-        label_password=QLabel("Password:")
-        input_password=QLineEdit()
+        label_username = QLabel("Username:")
+        input_username = QLineEdit()
+        label_password = QLabel("Password:")
+        input_password = QLineEdit()
 
-        btn_login=QPushButton("Login")
+        btn_login = QPushButton("Login")
 
         layout.addWidget(label_username)
         layout.addWidget(input_username)
@@ -32,5 +32,5 @@ class LoginScreen(QWidget):
 
     def showHome(self):
         self.close()
-        self.home=HomeScreen()
+        self.home = HomeScreen()
         self.home.show()

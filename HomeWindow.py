@@ -5,14 +5,14 @@ class HomeScreen(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Home")
-        self.resize(500,400)
-        widget=QWidget()
+        self.resize(500, 400)
+        widget = QWidget()
 
-        layout_horizontal=QHBoxLayout()
-        menu_vertical_layout=QVBoxLayout()
+        layout_horizontal = QHBoxLayout()
+        menu_vertical_layout = QVBoxLayout()
 
-        btn_home=QPushButton("Home")
-        btn_add=QPushButton("Add Vehicle")
+        btn_home = QPushButton("Home")
+        btn_add = QPushButton("Add Vehicle")
         btn_manage = QPushButton("Manage Vehicle")
         btn_history = QPushButton("History")
 
@@ -33,30 +33,30 @@ class HomeScreen(QMainWindow):
         menu_frame.setMaximumHeight(200)
 
 
-        parent_vertical=QVBoxLayout()
-        vertical_1=QVBoxLayout()
-        label_home=QLabel("Home")
+        parent_vertical = QVBoxLayout()
+        vertical_1 = QVBoxLayout()
+        label_home = QLabel("Home")
         vertical_1.addWidget(label_home)
 
-        vertical_2=QVBoxLayout()
+        vertical_2 = QVBoxLayout()
         label_add_vehicle = QLabel("Add Vehicle")
         vertical_2.addWidget(label_add_vehicle)
 
-        vertical_3=QVBoxLayout()
+        vertical_3 = QVBoxLayout()
         label_manage = QLabel("Manage")
         vertical_3.addWidget(label_manage)
 
-        vertical_4=QVBoxLayout()
+        vertical_4 = QVBoxLayout()
         label_history = QLabel("History")
         vertical_4.addWidget(label_history)
 
-        self.frame_1=QFrame()
+        self.frame_1 = QFrame()
         self.frame_1.setLayout(vertical_1)
-        self.frame_2=QFrame()
+        self.frame_2 = QFrame()
         self.frame_2.setLayout(vertical_2)
-        self.frame_3=QFrame()
+        self.frame_3 = QFrame()
         self.frame_3.setLayout(vertical_3)
-        self.frame_4=QFrame()
+        self.frame_4 = QFrame()
         self.frame_4.setLayout(vertical_4)
 
         parent_vertical.addWidget(self.frame_1)
